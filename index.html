@@ -3,71 +3,204 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Harsh Palimpsest</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300&display=swap');
-
-      body {
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(to bottom right, #1c1c1c, #0a0a0a);
-        color: #f3f0eb;
-        font-family: 'Inter', sans-serif;
-        letter-spacing: 0.5px;
-        overflow-x: hidden;
-      }
-
-      header {
-        padding: 14vh 6vw;
-        text-align: center;
-      }
-
-      h1 {
-        font-family: 'DM Serif Display', serif;
-        font-size: 4.2em;
-        margin: 0;
-        text-transform: uppercase;
-        color: #f8e0c3;
-        text-shadow: 2px 2px 8px #000;
-      }
-
-      p {
-        font-size: 1.25em;
-        max-width: 720px;
-        margin: 4vh auto;
-        color: #c6bcb0;
-        line-height: 1.75;
-      }
-
-      footer {
-        padding: 4vh 6vw;
-        text-align: center;
-        font-size: 0.95em;
-        color: #8f8f8f;
-        border-top: 1px solid #333;
-        font-style: italic;
-      }
-    </style>
+    <title>THE HAARSH PALIMPSEST - Harsh</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>The Harsh Palimpsest</h1>
-      <p>
-        Welcome to a locus of layered reflection—a digital manuscript of emotion, equation, and eloquence.<br>
-        This archive endeavours to weave arithmetic with affect, data with defiance, and story with soul.<br><br>
-        Much like its namesake, each phrase here is a palimpsest—a vestige overwritten yet never erased.
-      </p>
-    </header>
-<footer>
-  <div style="text-align: center; padding: 2vh 0;">
-    <a href="https://www.youtube.com/@haarzh" target="_blank" style="text-decoration: none;">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Logo" width="40" style="vertical-align: middle; margin-right: 10px;">
-      <span style="color: #f8e0c3; font-style: italic; font-size: 1.1em;">Capsules of Candour</span>
-    </a>
-  </div>
-  <div style="margin-top: 2vh; font-size: 0.9em; color: #777; font-style: italic;">
-    The Harsh Palimpsest — a living archive of memory and meaning.
-  </div>
-</footer>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="pigeonCursor">
+      <svg width="100" height="60" viewBox="0 0 100 60" style="display:block;">
+        <!-- Tail (spread, horizontal) -->
+        <polygon points="30,45 40,58 50,45 40,52" fill="#b0c4d6"/>
+        <!-- Body (slim, horizontal, kabootar style) -->
+        <path d="M40 52 Q30 35 65 32 Q90 38 65 52 Q55 56 40 52 Z" fill="#a3b9c9"/>
+        <!-- Belly (white, curved) -->
+        <ellipse cx="60" cy="50" rx="13" ry="7" fill="#f5f5f5"/>
+        <!-- Head (small, attached, forward) -->
+        <ellipse cx="85" cy="32" rx="7" ry="6" fill="#a3b9c9"/>
+        <!-- Beak (pointed, forward) -->
+        <polygon points="92,33 99,35 92,37" fill="#f7c873"/>
+        <!-- Eye -->
+        <circle cx="87" cy="31" r="1.5" fill="#222"/>
+        <!-- Cheek highlight -->
+        <ellipse cx="87" cy="34" rx="2" ry="1" fill="#f5f5f5" opacity="0.7"/>
+        <!-- Feet (tucked, pink) -->
+        <rect x="58" y="54" width="2" height="6" fill="#e89cae"/>
+        <rect x="62" y="54" width="2" height="6" fill="#e89cae"/>
+        <!-- Wing (animated, large, curved, kabootar style) -->
+        <g id="wing">
+          <path d="M55 48 Q25 10 75 15 Q95 35 55 48 Z" fill="#7a97b8"/>
+          <path d="M55 48 Q25 10 75 15 Q95 35 55 48 Z" fill="#7a97b8" opacity="0.5"/>
+        </g>
+      </svg>
+    </div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Breath -->
+    <div class="breath-loading" id="breathLoading">
+      <div class="breath-text">हर लफ्ज़ एक दर्द का साया है।</div>
+    </div>
+
+    <!-- Pigeon Guide -->
+    <div class="pigeon-guide" id="pigeonGuide">🕊</div>
+
+    <div class="universe">
+      <!-- ...existing content... -->
+             <!-- Genesis -->
+      <section class="genesis" id="genesis">
+        <div class="title-constellation">
+          <h1 class="name-emergence">THE HAARSH PALIMPSEST</h1>
+          <p class="soul-inscription">each word harbors silent anguish</p>
+        </div>
+      </section>
+
+      <!-- Realm 1: Truth -->
+      <section class="realm" id="realm1">
+        <div class="realm-container">
+          <div class="realm-marker reveal-element">TRUTH & DISCONTENTS</div>
+          <div class="soul-divider reveal-element delay-1"></div>
+          <div class="realm-content">
+            <h2 class="realm-title reveal-element delay-2">On Truth</h2>
+            <div class="realm-text reveal-element delay-3">
+              I am Harsh—a student of systems, an inheritor of
+              <span class="sacred-phrase"
+                >a world too broken to romanticize</span
+              >, and a practitioner of the increasingly unfashionable discipline
+              of asking inconvenient questions.
+            </div>
+            <div class="realm-text reveal-element delay-4">
+              This platform exists as a repository for research that serves no
+              master save accuracy, advocates for no cause save clarity, and
+              bows before no altar save evidence. In an age where intellectual
+              integrity has become a negotiable commodity and scholarly
+              independence a quaint anachronism, I maintain the perhaps naive
+              conviction that truth remains worth pursuing—particularly when it
+              proves uncomfortable for those who wield power.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Realm 2: Work -->
+      <section class="realm" id="realm2">
+        <div class="realm-container">
+          <div class="realm-marker reveal-element">THE EXCAVATION</div>
+          <div class="soul-divider reveal-element delay-1"></div>
+          <div class="realm-content">
+            <h2 class="realm-title reveal-element delay-2">The Work</h2>
+            <div class="realm-text reveal-element delay-3">
+              My investigations traverse territories where conventional wisdom
+              meets empirical reality and finds itself wanting. Whether
+              examining the elegant failures of international governance, the
+              systematic transformation of humanitarian principles into
+              bureaucratic abstractions, or the mechanisms by which democratic
+              institutions accommodate authoritarian impulses, my research
+              operates under a simple premise: that
+              <span class="sacred-phrase"
+                >complexity is not synonymous with ambiguity</span
+              >, and that sophistication need not require moral equivocation.
+            </div>
+            <div class="realm-text reveal-element delay-4">
+              Each piece employs what might be termed
+              <span class="sacred-phrase">forensic prose</span>—language precise
+              enough to satisfy academic scrutiny yet accessible enough to serve
+              democratic discourse. I proceed from the understanding that
+              obfuscation serves power while clarity serves humanity, that
+              jargon shields the comfortable while plain speaking unsettles the
+              culpable.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Realm 3: Purpose -->
+      <section class="realm" id="realm3">
+        <div class="realm-container">
+          <div class="realm-marker reveal-element">THE RECKONING</div>
+          <div class="soul-divider reveal-element delay-1"></div>
+          <div class="realm-content">
+            <h2 class="realm-title reveal-element delay-2">The Purpose</h2>
+            <div class="realm-text reveal-element delay-3">
+              These investigations exist not to provide reassurance but to
+              provoke recognition—recognition that the world's brokenness is
+              neither accidental nor inevitable, but often engineered by those
+              who profit from its persistence. They serve as testimony to what
+              becomes visible when one abandons the comfortable fiction that
+              power can be trusted to police itself, that institutions can be
+              assumed benevolent, and that good intentions justify questionable
+              outcomes.
+            </div>
+            <div class="realm-text reveal-element delay-4">
+              The work continues not despite the world's brokenness, but because
+              of it—and because some truths, however inconvenient, demand to be
+              spoken.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sanctuary -->
+      <section class="sanctuary" id="sanctuary">
+        <div class="quote-vessel">
+          <p class="quote-essence">
+            The highest form of patriotism is not the uncritical celebration of
+            one's country, but the willingness to hold it accountable to its
+            highest ideals.
+          </p>
+        </div>
+      </section>
+
+      <!-- Cosmos -->
+      <section class="cosmos" id="cosmos">
+        <div class="cosmos-grid">
+          <a href="#investigations" class="portal reveal-element">
+            <div class="portal-number">01</div>
+            <h3 class="portal-title">Investigations</h3>
+            <p class="portal-essence">
+              Deep excavations into the machinery of power, where conventional
+              narratives meet uncomfortable evidence and find themselves
+              stripped of their carefully constructed legitimacy.
+            </p>
+          </a>
+
+          <a href="#research" class="portal reveal-element delay-1">
+            <div class="portal-number">02</div>
+            <h3 class="portal-title">Research Series</h3>
+            <p class="portal-essence">
+              Ongoing explorations of systemic failures, historical patterns,
+              and contemporary crises that shape our fractured world with the
+              precision of forensic archaeology.
+            </p>
+          </a>
+
+          <a href="#archives" class="portal reveal-element delay-2">
+            <div class="portal-number">03</div>
+            <h3 class="portal-title">Archives</h3>
+            <p class="portal-essence">
+              A repository of documented truths, primary sources, and excavated
+              evidence—the raw material of accountability, preserved against the
+              entropy of collective amnesia.
+            </p>
+          </a>
+
+          <a href="#contact" class="portal reveal-element delay-3">
+            <div class="portal-number">04</div>
+            <h3 class="portal-title">Contact</h3>
+            <p class="portal-essence">
+              For serious inquiries, source material, collaborative
+              investigations, and those who refuse the comfortable anaesthesia
+              of willful ignorance.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Epilogue -->
+      <section class="epilogue">
+        <p class="final-word">Truth serves no master save itself</p>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
